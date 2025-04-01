@@ -1330,8 +1330,8 @@
         currentIndex++;
         
         // Instagram'ın sizi bot olarak algılamaması için bekleyin
-        var delay = 3000 + Math.random() * 2000;
-        addLog('⏱️ Sonraki işlem için ' + Math.round(delay/1000) + ' saniye bekleniyor...', 'info');
+        var delay = 800 + Math.random() * 700;
+        addLog('⏱️ Sonraki işlem için ' + (delay/1000).toFixed(1) + ' saniye bekleniyor...',
         setTimeout(processNext, delay);
       });
     }
